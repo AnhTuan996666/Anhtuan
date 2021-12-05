@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index-2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./scss/station-usermanager-style.css" />
+  </head>
+
+  <body>
+    <div class="station-richmenu">
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-lg-3 col-xl-2 px-0 main-slidebar-mobile"
+            id="set-width-sd"
+          >
+            <div class="sider-bar">
+              <ul>
+                <li class="sider-bar_list">
+                  <a href="#" class="sider-bar_lisk" id="sider-bar_lisk">
+                    <img src="img/sider-bar1.png" alt="" />
+                    <span class="sider-bar_name">メッセージ配信</span></a
+                  >
+                </li>
+                <li class="sider-bar_list">
+                  <a href="#" class="sider-bar_lisk" id="sider-bar_lisk">
+                    <img src="img/sider-bar1.png" alt="" />
+                    <span class="sider-bar_name">メッセージ配信</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-9 col-xl-10 station-richmenu-main" id="set-width">
+            <div class="station-richmenu-main-area justify-content-between">
+              <div
+                class="
+                  station-richmenu-main-area--item
+                  d-flex
+                  align-items-center
+                "
+              >
+                <button
+                  type="button"
+                  class="station-richmenu-main__btn"
+                  id="open"
+                >
+                  <img src="img/station-user-btn-01.png" alt="" />
+                </button>
+                <button
+                  type="button"
+                  class="station-richmenu-main__btn"
+                  id="close"
+                >
+                  <img src="img/station-user-btn-02.png" alt="" />
+                </button>
+                <h2 class="station-richmenu-main__ttl">ユーザー　詳細情報</h2>
+              </div>
+              <div class="station-richmenu-main-area__btn--tow">
+                <button type="button" class="btn-all-update">更新する</button>
+                <button type="button" class="btn-all-return">戻る</button>
+              </div>
+            </div>
+
+            <div class="row station-richmenu-main-bg__w mx-0">
+              <div class="col-lg-6">
+                <h3 class="title-from">基本情報</h3>
+                <form class="mt-5 px-3">
+                  <div class="form-group form-sty row">
+                    <label class="col-sm-4 col-form-label">LineID</label>
+                    <div class="col-sm-8">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputPassword"
+                        placeholder="テキスト入力"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group form-sty row">
+                    <label class="col-sm-4 col-form-label"
+                      >チェンネル登録日付</label
+                    >
+                    <div class="col-sm-8">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputPassword"
+                        placeholder="-"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group form-sty row">
+                    <label class="col-sm-4 col-form-label"
+                      >最終のアクション</label
+                    >
+                    <div class="col-sm-8">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputPassword"
+                        placeholder="-"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group form-sty row align-items-center">
+                    <label class="col-sm-4 col-form-label">連絡先</label>
+                    <div class="col-sm-8">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputPassword"
+                        placeholder="-"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group form-sty row">
+                    <label class="col-sm-4 col-form-label">連絡先</label>
+                    <div class="col-sm-8">
+                      <textarea
+                        class="form-control form-boder"
+                        id="exampleFormControlTextarea1"
+                        rows="4"
+                        placeholder="Text defaut"
+                      ></textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-lg-6">
+                <h3 class="title-from">基本情報</h3>
+                <form class="mt-5 px-3">
+                  <div class="form-group row justify-content-between">
+                    <label class="col-sm-4 col-form-label">車検</label>
+                    <div class="col-sm-6 d-flex align-items-center">
+                      <label class="set">
+                        <input type="checkbox" name="l" class="checkbox-none" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <input
+                        type="date"
+                        class="form-control input-sty"
+                        id="start"
+                        name="trip-start"
+                        value="2018-07-22"
+                        min="2018-01-01"
+                        max="2018-12-31"
+                        disabled="disabled"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /station-richmenu -->
+    <script src="./js/jquery-3.4.1.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>
